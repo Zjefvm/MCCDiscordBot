@@ -35,7 +35,7 @@ client.on("ready", async () => {
  
     console.log(`${client.user.username} is online.`);
  
-    client.user.setActivity("Zoekt errors & maakt zich zelf", { type: "PLAYING" });
+    client.user.setActivity("Minecraft Creations", { type: "PLAYING" });
  
 });
  
