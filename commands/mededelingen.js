@@ -2,6 +2,8 @@ const discord = require("discord.js");
 
 module.exports.run = async(bot, message, args) =>{
 
+    if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("Je hebt geen toestemming");
+    
     let embed = new discord.MessageEmbed()
     .setTitle("Annoucement")
     .setDescription(`Bericht van  ${message.author}\n\n${args.join(" ")}`)
