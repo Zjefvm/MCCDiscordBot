@@ -16,11 +16,11 @@ module.exports.run = async (bot, message, args) => {
         .addField("Ingezonden door: ", message.author);
  
     // Vind het kanaal.
-    var channelIdee = message.guild.channels.cache.find(x => x = "name", "idee");
-    if (!channelIdee) return message.guild.send("Kan het kanaal niet vinden");
+    var ideeChannel = message.guild.channels.cache.find(x => x = "name", "idee");
+    if (!ideeChannel) return message.guild.send("Kan het kanaal niet vinden");
  
     // Verzend het bericht en voeg er reacties aan toe.
-    channelIdee.send(ideeEmbed).then(embedMessage => {
+    ideeChannel.send(ideeEmbed).then(embedMessage => {
         embedMessage.react('👍');
         embedMessage.react('👎');
     });
