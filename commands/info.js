@@ -8,10 +8,10 @@ module.exports.run = async(bot, message, args) =>{
         .setColor("#1ad969")
         .addField("Bot naam:", bot.user.username)
 
-        .setThumbnail('https://i.imgur.com/wSTFkRM.png')
-        .setImage('https://i.imgur.com/wSTFkRM.png')
+        .setThumbnail('https://gyazo.com/b54a8eaa6e4bbb8977a885ec2f399e32')
+        .setImage('https://gyazo.com/b54a8eaa6e4bbb8977a885ec2f399e32')
         .setTimestamp()
-        .setFooter('Wij maken het mogelijk voor jou', 'https://i.imgur.com/wSTFkRM.png');
+        .setFooter('Ben jij al geabonneerd?', 'https://gyazo.com/b54a8eaa6e4bbb8977a885ec2f399e32');
 
     // Terug sturen van het bericht
     return message.channel.send(botEmbed);
