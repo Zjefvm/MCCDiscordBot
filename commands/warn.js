@@ -43,7 +43,7 @@ module.exports.run = async(bot, message, args) =>{
     .addField("Aantal warns", warns[warnUser.id].warns);
 
 
-var channel = message.member.guild.channels.cache.get("717763354504200233");
+var channel = message.member.guild.channels.cache.get("731823296194281523");
 
 if(!channel) return;
 
