@@ -3,7 +3,7 @@ const discord = require("discord.js");
 module.exports.run = async(bot, message, args) =>{
 
     var botEmbed = new discord.MessageEmbed()
-        .setTitle('Minecraft Creations Bot')
+        .setTitle('Zjef Youtube Bot')
         .setDescription("Officiele Discord Bot")
         .setColor("#1ad969")
         .addField("Bot naam:", bot.user.username)

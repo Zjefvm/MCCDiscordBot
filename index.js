@@ -35,23 +35,23 @@ client.on("ready", async () => {
  
     console.log(`${client.user.username} is online.`);
  
-    client.user.setActivity("Minecraft Creations", { type: "PLAYING" });
+    client.user.setActivity("Zjef", { type: "WATCHING" });
  
 });
  
 client.on("guildMemberAdd", member =>{
 
-var role = member.guild.roles.cache.get('717655670232449054');
+var role = member.guild.roles.cache.get('586255555711074304');
 
 if(!role) return;
 
 member.roles.add(role);
 
-var channel = member.guild.channels.cache.get('717645393965613116')
+var channel = member.guild.channels.cache.get('574252060036431872')
 
 if(!channel) return;
 
-channel.send(`Welkom op de **Minecraft Creations** server ${member}`);
+channel.send(`Welkom op de server van **Zjef**, ${member}`);
 
 })
 
