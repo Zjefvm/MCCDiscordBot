@@ -1,7 +1,7 @@
 const Commando = require('discord.js');
 const RichEmbed = require('discord.js').RichEmbed;
 
-class AddCommand extends Commando.Command {
+class AddCommand extends Commando.command {
     constructor(client) {
         super(client, {
             name: 'add',
@@ -66,7 +66,7 @@ class AddCommand extends Commando.Command {
         if (!msg.promptCount) msg.react('✅');
         let reply = 'Dank je wel voor je feedback!.';
         if (channel.permissionsFor(msg.member).hasPermission('READ_MESSAGES')) {
-            reply += ` Je kan het zien in ${ideeenfeedback} (ID #${744092574280581161}).`;
+            reply += ` Je kan het zien in ${channel} (ID #${formattedId}).`;
         }
 
         reply = await msg.reply(reply);
